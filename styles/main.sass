@@ -1,0 +1,669 @@
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+html,
+body 
+    height: 100%
+    width: 100%
+    overflow-x: hidden
+.container
+    margin-right: auto
+    margin-left: auto
+    position: relative
+    display: flex
+    flex-direction: column
+    height: 100%
+.container:before,
+.container:after 
+    display: table
+    content: " " 
+.wrapper
+    flex: 1 0 auto
+.footer
+    flex: 0 0 auto
+    border: 1px solid black
+
+
+.first-page-wrapper
+    background-color: #191919
+    backdrop-filter: blur(4px)
+    background-image: url('../images/henry-co-707496-unsplash.png') 
+    background-size: cover
+    background-repeat: no-repeat
+    width: 100%
+    height: 99vh
+.page 
+    display: flex
+    margin: 0 auto
+    width: 70%
+    height: 100%
+    border-left: 4px solid rgba(246, 246, 246, 0.1)
+.first-page
+    // margin: 0 auto
+    // width: 65%
+    // height: 100%
+.first-page-number 
+    width: 5%
+    height: 100%
+    padding-top: 206px
+.page-number
+    display: flex
+    justify-content: center
+    align-items: center
+    border-left: 2px solid #d9b16c
+    color: #d9b16c
+    font-weight: 800
+    font-size: 24px
+    line-height: 29px
+    font-style: normal
+    padding-left: 5px
+    position: absolute
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    width: 28px
+    height: 29px
+.main-content-block-wrapper
+    width: 100%
+    height: 100%
+
+.header
+    display: flex
+    justify-content: space-between
+    padding-top: 15px
+    width: 100%
+    height: auto
+.menu,
+.support-numbers
+    display: flex
+    flex-wrap: wrap
+.nav
+    width: 50%
+.menu
+    display: flex
+    justify-content: flex-start
+.menu-top__item
+    list-style: none
+    border-left: 2px solid #f6f6f6
+    padding-left: 5px
+    padding-right: 5px
+.menu-top__item:first-child
+    border-left: none
+.menu-top__item:first-letter
+    text-transform: capitalize
+.menu__link-top
+    color: #f6f6f6
+    text-decoration: none
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+.support-numbers
+    display: flex
+    justify-content: space-between
+    width: 45%
+
+.vector:before
+    position: absolute
+    content: ''
+    width: 15px
+    height: 19px
+    background-image: url(../images/vector.svg)
+    background-repeat: no-repeat    
+    background-position: center
+.vector span
+    padding-left: 16px
+    color: #f6f6f6
+    line-height: 19px
+    font-size: 16px
+    font-weight: 800
+    font-style: normal
+.logo-wrapper
+    display: flex
+    width: 20%
+    padding-top: 10px
+.logo
+    background-image: url(../images/res3x.png)
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+    height: 100%
+.what-are-we-doing
+    text-transform: capitalize
+    color: #d9b16c
+    line-height: 19px
+    font-size: 16px
+.nav-bottom
+    width: 80%
+.menu-bottom
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    height: 100%
+.menu-bottom__item
+    list-style: none
+    padding-left: 20px
+    padding-right: 20px
+.menu__link-bottom  
+    color: #f6f6f6
+    text-decoration: none
+    line-height: 19px
+    font-size: 16px
+    font-weight: bold
+    font-style: normal
+.menu-bottom__item:first-letter
+    text-transform: capitalize
+.menu-bottom__item:last-child
+    border: 3px solid #d9b16c
+    border-radius: 30px
+.reference
+    display: flex
+    padding-top: 10px
+    padding-bottom: 10px
+    color: #d9b16c
+.active
+    color: #d9b16c
+.section-body
+    display: flex
+    width: 100%
+    height: 100%
+.left
+    display: flex
+    flex-direction: column
+    width: 65%
+    height: 100%
+    padding-top: 120px
+.left-header
+    color: #d9b16c
+    text-transform: uppercase
+    width: 100%
+    height: 100%
+    font-style: normal
+    font-weight: bold
+    font-size: 58px
+    line-height: 82px
+    letter-spacing: 0.05em
+.slogan
+    color: #f6f6f6
+    font-style: normal
+    font-weight: 600
+    font-size: 24px
+    line-height: 29px
+.slogan:first-letter
+    text-transform: capitalize
+.facts-about-us-wrapper
+    width: 100%
+    height: 200px
+.facts-about-us
+    display: flex
+    justify-content: space-around
+    padding-left: 290px
+    position: absolute
+    top: 500px
+    left: 0
+    width: 62%
+    height: 120px
+    background: rgba(25, 25, 25, 0.5)
+.fact
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    width: 140px
+.attracts
+    color: #d9b16c
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 43px
+    height: 50%
+.contrast
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 23px
+    color: #F6F6F6
+.capitalize:first-letter
+    text-transform: capitalize
+
+.second-fact__car-image
+    background-image: url(../images/car.png)
+    background-repeat: no-repeat
+    background-position: top
+    width: 100%
+    height: 50%
+.second-fact__bag-image
+    background-image: url(../images/bag.png)
+    background-repeat: no-repeat
+    background-position: top
+    width: 100%
+    height: 50%
+.right
+    width: 35%
+    padding-left: 3px
+.phon-image
+    height: 100%
+    background-image: url(../images/phon.png)
+    background-repeat: no-repeat
+    background-size: contain
+
+.drag-and-drop-wrapper
+    width: 100%
+    height: 100%
+    padding-top: 40px
+    padding-left: 30px
+.drag-and-drop
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    align-items: center
+    width: 60%
+    height: 93%
+    border: 2px dashed black
+.how-do-we-do-it
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    background-color: rgba(25, 25, 25, 0.9)
+    width: 90%
+    height: 121px
+.contrastTwo
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 23px
+    text-align: center
+    color: #F6F6F6
+
+.processing-unit
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+.processing-unit__button
+    width: 90%
+    height: 45px
+    background-color: #D9B16C
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15)
+    border-radius: 30px
+    font-weight: bold
+    font-size: 16px
+    line-height: 19px
+    text-align: center
+    color: #191919
+.processing-unit__hint
+    background-color: rgba(25, 25, 25, 0.9)
+    border-radius: 4px
+    font-style: normal
+    font-weight: normal
+    font-size: 11px
+    margin-top: 15px
+    margin-bottom: 15px
+    line-height: 14px
+    text-align: center  
+    color: #F6F6F6
+.transition 
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 65%
+    height: 155px
+.transition-button-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    transform: rotate(45deg)
+    width: 50px
+    height: 50px
+    background-color: white
+.transition__button
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 30px
+    height: 30px
+    background-color: #D9B16C
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15)
+.line
+    width: 11px
+    height: 11px
+    border-right: 2px solid #191919
+    border-bottom: 2px solid #191919
+    border-radius: 0.4px
+
+//---------------------------------------------------------second page
+//------------------------------------------------------------------
+//----------------------------------------------------------------
+
+.third-page-wrapper
+    background-image: url(../images/assort-back.png)
+    background-color: #191919
+    backdrop-filter: blur(4px)
+    background-size: cover
+    background-repeat: no-repeat
+    width: 100%
+    height: 900px
+
+.second-page,
+.third-page
+    flex: 1 0 auto
+    display: flex
+    margin: 0 auto
+    width: 70%
+    height: 900px
+    border-left: 4px solid rgba(246, 246, 246, 0.1)
+
+.second-page_white-line
+     border-left: 4px solid rgba(25, 25, 25, 0.1)
+.second-page-number,
+.third-page-number    
+    width: 5%
+    height: 100%
+    padding-top: 100px
+
+
+
+
+//------------------------------------
+//------------------------------------Block Description header
+//------------------------------------
+.catalog-header,
+.range-header
+    padding-top: 110px
+    width: 55%
+    padding-bottom: 60px
+.catalog-header__first-item,
+.range-header__first-item
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 43px
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: #191919
+.range-header__first-item
+    color: #D9B16C
+.catalog-header__second-item,
+.range-header__second-item
+    ont-style: normal
+    font-weight: 500
+    font-size: 24px
+    line-height: 35px
+    color: #191919
+.range-header__second-item
+    color: #f6f6f6
+    padding-top: 10px
+.catalog-header__second-item span
+    color: #D9B16C
+    text-transform: uppercase
+
+//------------------------------------
+//------------------------------------Block Description header end
+//------------------------------------
+.decision-catalog
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+.option
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: 35vh
+
+.option__one
+    width: 59%
+    height: 100%
+    background-image: url(../images/example-one.png)
+    background-repeat: no-repeat
+    background-size: 100% 95%
+.option__two
+    width: 39%
+    height: 100%
+    background-image: url(../images/example-two.png)
+    background-repeat: no-repeat
+    background-size: 100% 95%
+.option__three
+    width: 39%
+    height: 100%
+    background-image: url(../images/example-three.png)
+    background-repeat: no-repeat
+    background-size: 100% 95%
+.option__four
+    width: 59%
+    height: 100%
+    background-image: url(../images/example-four.png)
+    background-repeat: no-repeat
+    background-size: 100% 95%
+.banner-wrapper
+    width: 99%
+    height: 80%
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+.banner
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: rgba(217, 177, 108, 0.9)
+    border-radius: 6px 0px 0px 6px
+    width: 300px
+    height: 70px
+.banner__name
+    color: #f6f6f6
+    line-height: 29px
+    font-size: 24px
+    font-weight: 600
+
+.range-wrapper  
+    width: 100%
+    height: auto
+.capability-wrapper
+    width: 100%
+    height: 500px
+.capability
+    display: flex
+    width: 100%
+    height: 500px
+.capability-first-block-wrapper,
+.capability-second-block-wrapper
+    width: 50%
+    height: 100%
+
+.capability-first,
+.capability-second,
+.capability-third,
+.capability-four
+    display: flex
+    width: 100%
+    height: 50%
+
+.capability-first__item-one,
+.capability-second__item-one
+    display: flex
+    align-items: center
+    
+
+.capability-first__item-two,
+.capability-second__item-two,
+.capability-third__item-one,
+.capability-fourth__item-one
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    width: 100%
+.capability-first__item-two_inserts-a-picture
+    width: 380px
+    height: 100%
+    background-image: url(../images/assort-one.png)
+    background-position: right
+    background-repeat: no-repeat
+.capability-second__item-two_inserts-a-picture
+    width: 380px
+    height: 100%
+    background-image: url(../images/assort-three.png)
+    background-position: right
+    background-repeat: no-repeat
+.capability-third__item-two_inserts-a-picture
+    width: 380px
+    height: 100%
+    background-image: url(../images/assort-two.png)
+    background-position: left
+    background-repeat: no-repeat
+.capability-four__item-two_inserts-a-picture
+    width: 380px
+    height: 100%
+    background-image: url(../images/assort-four.png)
+    background-position: left
+    background-repeat: no-repeat
+
+
+.capability-first-description,
+.capability-second-description,
+.capability-third-description,
+.capability-fourth-description
+    position: absolute
+    background-color: rgba(25, 25, 25, 0.9)
+    border-radius: 6px
+    min-width: 280px
+    max-width: 200px
+    min-height: 180px
+    max-height: 390px
+    border: 1px solid white
+    padding-left: 10px
+    padding-top: 5px
+
+
+.capability-first-description__name,
+.capability-second-description__name,
+.capability-third-description__name,
+.capability-fourth-description__name
+    color: #D9B16C
+.capability-first-description__image
+    width: 100%
+    height: 50px
+    background-image: url(../images/assort-one-pic.png)
+    background-repeat: no-repeat
+.capability-second-description__image
+    width: 100%
+    height: 50px
+    background-image: url(../images/assort-three-pic.png)
+    background-repeat: no-repeat
+.capability-third-description__image
+    width: 100%
+    height: 50px
+    background-image: url(../images/assort-two-m_pic.png)
+    background-repeat: no-repeat
+.capability-four-description__image
+    width: 100%
+    height: 50px
+    background-image: url(../images/assort-four-pic.png)
+    background-repeat: no-repeat
+
+
+
+
+
+.footer-top
+    display: flex
+    justify-content: center
+    height: 300px
+    background: #191919
+
+
+.footer-bottom
+    height: 60px
+.nav-footer
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 50%
+.nav-footer li 
+    list-style: none
+.nav-footer a 
+    color: #f6f6f6
+    text-decoration: none
+.menu-footer,
+.menu-instructions,
+.contacts,
+.working-hours
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 15%
+    height: 100%
+.menu-footer span
+    width: 55%
+    padding-bottom: 10px
+.contacts span
+    width: 55%
+    padding-bottom: 10px
+.contacts ul
+    color: #f6f6f6
+.working-hours
+    color: #f6f6f6
+.logo-footer-wrapper
+    display: flex
+    align-items: center
+    width: 15%
+    height: 100%
+ 
+.logo
+    background-image: url(../images/res3x.png)
+    background-repeat: no-repeat
+    background-position: center
+    width: 100%
+    height: 100%
+.what-are-we-doing
+    text-transform: capitalize
+    color: #d9b16c
+    line-height: 19px
+    font-size: 16px
+
+
+
+
+
+
+
+
+    
+
+.transition-top
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    width: 65%
+    height: 100px
+
+.transition-top-button-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    transform: rotate(45deg)
+    width: 50px
+    height: 50px
+    background-color: white
+
+.transition-top__button
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 30px
+    height: 30px
+    background-color: #D9B16C
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15)
+.line-top
+    width: 11px
+    height: 11px
+    border-left: 2px solid #191919
+    border-top: 2px solid #191919
+    border-radius: 0.4px
+    
